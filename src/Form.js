@@ -187,7 +187,7 @@ export default function Form(props) {
                     onChange={onInputChange}
                 />
 
-            <button>Add To Order</button>
+            <button id='submitBtn'>Add To Order</button>
 
 
 
