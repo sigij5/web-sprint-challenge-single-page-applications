@@ -2,15 +2,27 @@ import React, {useState, useEffect} from "react";
 import {Switch, Route, Link} from 'react-router-dom'
 import Form from './Form'
 import Home from './Home'
+import Order from './Order'
 import './App.css'
 import axios from 'axios'
 import * as Yup from "yup";
+
 
 
 const formSchema = Yup.object().shape({
   name: Yup
   .string()
   .min(2, "Names must be at least 2 characters long."),
+  size: Yup
+    .string()
+    .oneOf(['Small', 'Medium', 'Large'], "Please select a size"),
+  sauce: Yup
+    .string()
+    .oneOf(["Original", "Ranch", 'BBQ', "Alfredo"], "Please select a sauce"),
+  toppings: Yup
+    .string(),
+  instructions: Yup
+    .string(),
 });
 
 const initialFormValues = {
@@ -31,7 +43,6 @@ const initialFormValues = {
     pineapple:false,
     artichoke:false,
   },
-  substitute:false,
   instructions: '',
 }
 
@@ -119,6 +130,7 @@ export default function App(props) {
     }
 
     postNewOrder(newOrder)
+    
   }
 
   useEffect(() => {
@@ -131,10 +143,13 @@ export default function App(props) {
         <h1>Lambda Eats</h1>
         <div className="nav-links">
           <Link to='/'>Home</Link>
-          <Link to='/pizza'>Order</Link>
+          <Link to='/order'>Order</Link>
         </div>
       </nav>
     <Switch>
+      <Route path='/order'>
+        <Order orders={orders}/>
+      </Route>
 
       <Route path='/pizza'>
         <Form 

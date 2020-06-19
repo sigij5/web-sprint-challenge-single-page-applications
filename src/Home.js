@@ -21,18 +21,6 @@ export default function Home(props) {
             </header>
 
 
-            <div className='order-list'>
-                {console.log(orders)}
-                {orders.map(order => {
-                    return (
-                        <div className='order'>
-                            <h4>{order.name}</h4>
-                            <p>{`${order.size}, ${order.sauce}, ${order.toppings}, ${order.instructions}`}</p>
-                        </div>
-
-                    )
-                })}
-            </div>
         </section>
     )
 }
