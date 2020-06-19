@@ -1,0 +1,24 @@
+
+
+.image-header {
+    display: flex;
+    background-image: url('./Pizza.jpg');
+    background-size: cover;
+    width:100%;
+    height:30vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: black;
+
+}
+section{
+    width:100%;
+}
+
+header button{
+    width:10%;
+    font-style: oblique;
+
+}
