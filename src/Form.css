@@ -7,6 +7,15 @@ form {
     align-items: center;
 }
 
+
+.picture {
+    display: flex;
+    background-image: url('./Pizza.jpg');
+    background-size: cover;
+    width:100%;
+    height:30vh;
+}
+
 .checkboxes{
     display:flex;
     flex-flow:row wrap;

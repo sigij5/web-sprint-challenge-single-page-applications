@@ -13,7 +13,7 @@ export default function Home(props) {
 
     return (
         <section className='home-page'>
-            <header>
+            <header className='image-header'>
                 <h2>Don't try coding while hungry!</h2>
                 <button onClick={routeToOrder} className='orderBtn'>
                     Pizza?

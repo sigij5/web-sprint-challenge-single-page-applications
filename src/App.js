@@ -142,8 +142,8 @@ export default function App(props) {
       <nav className='nav-bar'>
         <h1>Lambda Eats</h1>
         <div className="nav-links">
-          <Link to='/'>Home</Link>
-          <Link to='/order'>Order</Link>
+          <Link className='nav' to='/'>Home</Link>
+          <Link className='nav' to='/order'>Order</Link>
         </div>
       </nav>
     <Switch>

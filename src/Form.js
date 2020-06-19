@@ -12,7 +12,6 @@ export default function Form(props) {
                 <h2>Build Your Own Pizza</h2>
             </div>
             <div className='picture'>
-                <img src='../Assets/Pizza.jpg' alt='pizza'></img>
             </div>
 
             <label>Name:&nbsp;
