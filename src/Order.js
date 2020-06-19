@@ -1,4 +1,5 @@
 import React from 'react'
+import './Order.css'
 
 
 export default function Order (props) {
@@ -15,7 +16,12 @@ export default function Order (props) {
             return (
                 <div className='order'>
                     <h4>{order.name}</h4>
-                    <p>{`${order.size}, ${order.sauce}, ${order.toppings}, ${order.instructions}`}</p>
+                    <ul>
+                        <li>{`Size: ${order.size}`}</li>
+                        <li>{`Sauce: ${order.sauce}`}</li>
+                        <li>{`Toppings: ${order.toppings}`}</li>
+                        <li>{`Instructions: ${order.instructions}`}</li>
+                    </ul>
                 </div>
 
             )

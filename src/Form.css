@@ -5,6 +5,7 @@ form {
     width: 80%;
     border: 1px solid red;
     align-items: center;
+    padding: 1% 1% 5% 1%;
 }
 
 
@@ -19,6 +20,7 @@ form {
 .checkboxes{
     display:flex;
     flex-flow:row wrap;
+    width:40%;
 }
 
 .checkboxes h4{
@@ -40,10 +42,17 @@ p{
 
 
 .instructions{
-    width:40%;
+    width:30%;
     display:flex;
+    margin: 0% 0% 2% 0%;
 }
 
 h4{
     margin:0%;
+}
+
+#submitBtn{
+    padding:1%;
+    border-radius: 10%;
+    color:black;
 }
